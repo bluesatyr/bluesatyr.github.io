@@ -23,6 +23,7 @@ ul {
 
 a {
     text-decoration: none;
+    
 }
 
 
@@ -121,6 +122,11 @@ header nav ul li a:hover {
     border-right: 3px solid var(--teal);
 }
 
+.content-heading h2 {
+    text-align: end;
+    font-size: 32px;
+}
+
 .about-text, .grid-container, .contact-text {
     flex: 2 70%;
     margin-left: 20px;
@@ -139,14 +145,50 @@ header nav ul li a:hover {
 
 .grid-card {
     background-color: var(--powderblue);
-    grid-column: span 2
+    grid-column: span 2;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     
+}
+
+.grid-card h3 {
+    background-color: var(--dark-brown);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.grid-card a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--sandstone);
+}
+
+.grid-card  a:hover {
+    color: var(--burnt-sienna);
 }
 
 .card1 {
     grid-column: span 4;
     grid-row: span 2;
+    background-image: url(https://bluesatyr.github.io/okamisca/images/murder_procession.jpg);
 }
+
+.card2 {
+    background-image: url(../images/card2.jpg);
+}
+.card3 {
+    background-image: url(../images/card3.jpg);
+}
+
+.card4 {
+    background-image: url(../images/card4.png);
+}
+
+/* Contact Info Styles */
 
 .contact-text {
     display: flex;
@@ -165,10 +207,11 @@ header nav ul li a:hover {
 
 .contact-text a:hover {
     color: var(--burnt-sienna);
-}
+    border-bottom: 3px solid var(--burnt-sienna);
+    font-weight: bold;
 }
 
-/* Contact Info Styles */
+
 
 /* Media Query Styles */
 
@@ -219,6 +262,10 @@ header nav ul li a:hover {
         text-align: center;;
         border-right: none;
         border-bottom: 3px solid var(--teal);
+    }
+    
+    .content-heading h2 {
+        text-align: center;
     }
     
     .about-text, .grid-container, .contact-text {
