@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-brown: #260101;
+    --burnt-sienna: #8C391B;
+    --light-coffee: #BF814B;
+    --sandstone: #F2CA7E;
+    --teal: #1BCBF2;
+    --powderblue: #A3C3DC;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: var(--dark-brown);
+    color: var(--sandstone);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 15px
+}
+
+header h1 {
+    
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url(../images/hero-bg.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#hero div {
+    
+}
+
+
+#hero h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    background-color: var(--light-coffee);
+    width: 400px;
+    padding: 10px auto;
+    text-align: center;
+    color: var(--dark-brown);
+    
+}
+
+/* Main Content Area Styling */
+
+.about-me, .projects, .contact-info{
+    display:flex;
+    margin-bottom: 50px
+}
+
+.content-heading {
+    flex: 1 30%;
+}
+
+.about-text, .grid-container, .contact-text {
+    flex: 2 70%
+}
+
+
+
