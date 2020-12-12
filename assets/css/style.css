@@ -44,6 +44,7 @@ header h1 {
 
 header nav {
     width: 40%;
+    margin: auto 0px;
 }
 
 header nav ul {
@@ -51,11 +52,16 @@ header nav ul {
     justify-content: space-between;
     align-content: center;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px
 }
 
 header nav ul li a{
     text-decoration: none;
     color: var(--sandstone);
+}
+
+header nav ul li a:hover {
+    color: var(--burnt-sienna);
 }
 
 /* Footer Styles */
@@ -112,10 +118,12 @@ header nav ul li a{
     padding-right: 40px;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--burnt-sienna);
+    border-right: 3px solid var(--teal);
 }
 
 .about-text, .grid-container, .contact-text {
-    flex: 2 70%
+    flex: 2 70%;
+    margin-left: 20px;
 }
 
 /* About Me Styles */
@@ -140,9 +148,83 @@ header nav ul li a{
     grid-row: span 2;
 }
 
+.contact-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.contact-text p {
+    border-bottom: 3px solid var(--teal);
+    font-weight: 700;
+}
+
+.contact-text a {
+    color: var(--dark-brown);
+}
+
+.contact-text a:hover {
+    color: var(--burnt-sienna);
+}
+}
 
 /* Contact Info Styles */
 
 /* Media Query Styles */
+
+/* Desktop Styles */
+@media screen and (max-width: 980px) {
+	
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+	.grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 120px);
+        grid-gap: 20px;
+    }
+    
+    header nav ul li{
+        font-size: 16px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 575px) {
+	
+    header {
+        flex-direction: column;
+    }
+    
+    header h1 {
+    text-align: center;
+    font-size: 32px;
+    }
+    
+    header nav {
+        width: 100%;
+        margin: auto 0px;
+        justify-content: space-around;
+    }
+    
+    .about-me, .projects, .contact-info{
+        flex-direction: column;
+    }
+    
+    .content-heading {
+        flex: 0 100%;
+        text-align: center;;
+        border-right: none;
+        border-bottom: 3px solid var(--teal);
+    }
+    
+    .about-text, .grid-container, .contact-text {
+        flex: 0 100%;
+        margin-left: 0;
+        margin-top: 15px;
+}
+}
  
