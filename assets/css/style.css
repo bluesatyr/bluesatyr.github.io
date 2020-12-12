@@ -17,6 +17,15 @@ body {
     width: 100%;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* Header Styles */
 header {
     width: 100%;
@@ -29,7 +38,8 @@ header {
 }
 
 header h1 {
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
 }
 
 header nav {
@@ -40,7 +50,16 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--sandstone);
+}
+
+/* Footer Styles */
+
 
 /* Hero Section */
 #hero {
@@ -52,9 +71,7 @@ header nav ul {
     margin-bottom: 50px;
 }
 
-#hero div {
-    
-}
+
 
 
 #hero h2 {
@@ -63,15 +80,25 @@ header nav ul {
     right: 0;
     margin-bottom: 5%;
     margin-right: 10%;
-    background-color: var(--light-coffee);
+    background-color: var(--sandstone);
     width: 400px;
     padding: 10px auto;
     text-align: center;
-    color: var(--dark-brown);
+    color: var(--burnt-sienna);
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 
 /* Main Content Area Styling */
+
+.main-content {
+    margin: 0 30px
+}
+
+.main-content p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-brown);
+}
 
 .about-me, .projects, .contact-info{
     display:flex;
@@ -80,11 +107,36 @@ header nav ul {
 
 .content-heading {
     flex: 1 30%;
+    text-align: right;
+    padding-right: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--burnt-sienna);
 }
 
 .about-text, .grid-container, .contact-text {
     flex: 2 70%
 }
 
+/* About Me Styles */
+
+/* My Projects Styles */
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 20px;
+}
+
+.grid-card {
+    background-color: var(--powderblue);
+    
+}
 
 
+
+
+/* Contact Info Styles */
+
+/* Media Query Styles */
+ 
