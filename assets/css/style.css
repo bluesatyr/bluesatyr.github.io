@@ -246,6 +246,7 @@ header nav ul li a:hover {
 
 .contact-text p {
     font-weight: 700;
+    margin-right: 10px;
 }
 
 .contact-text a {
@@ -295,7 +296,7 @@ header nav ul li a:hover {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 585px) {
 	
     header {
         flex-direction: column;
