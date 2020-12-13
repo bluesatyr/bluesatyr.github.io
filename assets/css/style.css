@@ -146,14 +146,28 @@ header nav ul li a:hover {
 .grid-card {
     background-color: var(--powderblue);
     grid-column: span 2;
+    box-shadow: -3px 3px 5px 0 #ccc;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
-    position: relative;
-    
+    position: relative;  
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
 }
 
 .grid-card h3 {
+    z-index: 2;
     background-color: var(--dark-brown);
     padding: 10px;
     position: absolute;
@@ -162,13 +176,17 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.grid-card a {
+.grid-card h3 {
     font-family: 'Josefin Sans', sans-serif;
     color: var(--sandstone);
 }
 
-.grid-card  a:hover {
+.grid-card:hover h3 {
     color: var(--burnt-sienna);
+}
+
+.grid-card:hover .overlay{
+    opacity: 0.4;
 }
 
 .card1 {
