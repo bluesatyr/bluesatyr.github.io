@@ -220,7 +220,7 @@ header nav ul li a:hover {
 .card1 {
     grid-column: span 4;
     grid-row: span 2;
-    background-image: url(https://bluesatyr.github.io/okamisca/images/murder_procession.jpg);
+    background-image: url(../images/card1.png);
 }
 
 .card2 {
@@ -232,6 +232,10 @@ header nav ul li a:hover {
 
 .card4 {
     background-image: url(../images/card4.png);
+}
+
+.card5 {
+    background-image: url(https://bluesatyr.github.io/okamisca/images/murder_procession.jpg)
 }
 
 
