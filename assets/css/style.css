@@ -220,7 +220,7 @@ header nav ul li a:hover {
 .card1 {
     grid-column: span 4;
     grid-row: span 2;
-    background-image: url(../images/card1.png);
+    background-image: url(../images/card1.jpg);
 }
 
 .card2 {
