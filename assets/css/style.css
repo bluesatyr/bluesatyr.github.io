@@ -94,8 +94,7 @@ header nav ul li a:hover {
     position: absolute;
     margin-left: 50px;
     margin-bottom: 50px;
-    bottom: 0;
-    z-index: 
+    bottom: 0;  
 }
 
 
@@ -220,14 +219,14 @@ header nav ul li a:hover {
 .card1 {
     grid-column: span 4;
     grid-row: span 2;
-    background-image: url(../images/card1.jpg);
+    background-image: url(../images/card1.png);
 }
 
 .card2 {
     background-image: url(../images/card2.jpg);
 }
 .card3 {
-    background-image: url(../images/card3.jpg);
+    background-image: url(../images/card3.png);
 }
 
 .card4 {
